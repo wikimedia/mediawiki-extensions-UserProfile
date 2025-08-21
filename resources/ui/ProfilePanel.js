@@ -222,5 +222,5 @@ ext.userProfile.ui.ProfilePanel.prototype.shouldShow = function ( key ) {
 	if ( this.fieldsToShow.length === 0 ) {
 		return true;
 	}
-	return this.fieldsToShow.indexOf( key ) !== -1;
+	return this.fieldsToShow.includes( key );
 };
