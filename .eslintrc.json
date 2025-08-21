@@ -1,0 +1,23 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client",
+		"wikimedia/mediawiki",
+		"wikimedia/jquery"
+	],
+	"parserOptions": {
+		"sourceType": "commonjs"
+	},
+	"globals": {
+		"bs": "readonly",
+		"ext": "readonly",
+		"ve": "readonly",
+		"OO": "readonly"
+	},
+	"rules": {
+		"es-x/no-object-values": "off",
+		"max-len": "off",
+		"no-jquery/no-global-selector": "off",
+		"no-prototype-builtins": "off"
+	}
+}
