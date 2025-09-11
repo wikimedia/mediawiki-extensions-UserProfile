@@ -24,7 +24,6 @@ class DirectPathDynamicFile implements IDynamicFile {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getMimeType(): string {
