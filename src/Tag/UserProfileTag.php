@@ -101,6 +101,7 @@ class UserProfileTag extends GenericTag {
 				'type' => 'checkbox',
 				'name' => 'framed',
 				'label' => Message::newFromKey( 'userprofile-ve-attr-framed-label' )->text(),
+				'labelAlign' => 'inline'
 			],
 			[
 				'type' => 'dropdown',
@@ -120,7 +121,7 @@ class UserProfileTag extends GenericTag {
 				'type' => 'menutag_multiselect',
 				'name' => 'fields',
 				'label' => Message::newFromKey( 'userprofile-ve-attr-fields' )->text(),
-				'help' => Message::newFromKey( 'userprofile-ve-attr-fields-help' )->text(),
+				'help' => Message::newFromKey( 'userprofile-ve-attr-fields-label-help' )->text(),
 				'options' => $availableFields,
 				'widget_allowArbitrary' => false,
 				'widget_$overlay' => true,
