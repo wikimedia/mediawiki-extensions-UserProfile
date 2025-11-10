@@ -69,7 +69,7 @@ class ProfileDroplet extends TagDroplet {
 	 * @return string|null
 	 */
 	public function getVeCommand(): ?string {
-		return 'userprofileCommand';
+		return 'user-profileCommand';
 	}
 
 }
