@@ -1,0 +1,14 @@
+[
+	{
+		"resourceModule": "ext.userProfile.styles",
+		"maxSize": "2 kB"
+	},
+	{
+		"resourceModule": "ext.userProfile.profileImage.bootstrap",
+		"maxSize": "2 kB"
+	},
+	{
+		"resourceModule": "ext.userProfile.bootstrap",
+		"maxSize": "2 kB"
+	}
+]
