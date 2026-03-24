@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"McDutchie"
+			"McDutchie",
+			"Siebrand"
 		]
 	},
 	"userprofile-desc": "Gebruikersinterface en aanvullende gegevens voor gebruikersprofielen",
@@ -38,7 +39,7 @@
 	"userprofile-droplet-name": "Gebruikersprofiel",
 	"userprofile-droplet-name-description": "Toont profielinformatie van een gebruiker",
 	"userprofile-ve-attr-user-label": "Gebruiker",
-	"userprofile-ve-attr-user-help": "Gebruikersnaam",
+	"userprofile-ve-attr-user-help": "Naam van de gebruiker wiens profiel moet worden weergegeven",
 	"userprofile-set-userimage-failed": "Deze afbeelding kan niet worden gebruikt als profielafbeelding",
 	"userprofile-changeuserimage-title": "Profielafbeelding wijzigen",
 	"userprofile-userimage-choose-title": "Selecteer een afbeelding uit de afbeeldingen in de wiki",
