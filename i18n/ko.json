@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Bisang",
+			"Tensama0415",
 			"YeBoy371",
 			"Ykhwong"
 		]
@@ -29,5 +30,17 @@
 	"userprofile-changeuserimage-title": "프로필 사진 바꾸기",
 	"userprofile-pref-userimage": "프로필 사진",
 	"userprofile-pref-userimage-link": "프로필 보기",
-	"userprofile-ve-attr-orientation-vertical": "수직"
+	"userprofile-ve-attr-orientation-vertical": "수직",
+	"userprofile-tag-error": "사용자 프로필을 표시할 수 없습니다<br>$1",
+	"userprofile-save-error": "프로필을 저장하는 도중 오류가 발생했습니다<br>$1",
+	"userprofile-edit-summary": "사용자 프로필 편집됨",
+	"userprofile-unauthorized": "당신은 이 프로필을 볼 권한이 없습니다",
+	"userprofile-edit-profile": "프로필 데이터 편집",
+	"userprofile-field-department": "부서",
+	"userprofile-field-function": "직함",
+	"userprofile-field-location": "위치",
+	"userprofile-field-phone": "전화번호",
+	"userprofile-ve-attr-framed-label": "프레임",
+	"userprofile-ve-attr-orientation-label": "방향",
+	"userprofile-ve-attr-orientation-horizontal": "수평"
 }
