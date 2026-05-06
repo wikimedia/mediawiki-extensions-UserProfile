@@ -60,7 +60,7 @@ ext.userProfile.ui.ProfilePanel.prototype.enterErrorMode = function ( messageKey
 	this.$element.html(
 		new OO.ui.MessageWidget( {
 			type: 'error',
-			label: mw.message( messageKey ).text() // eslint-disable-line mediawiki/msg-doc
+			label: mw.message( messageKey ).text()
 		} ).$element
 	);
 };
