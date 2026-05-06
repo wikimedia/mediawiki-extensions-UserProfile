@@ -20,7 +20,7 @@ class ProfileContentHandler extends JsonContentHandler {
 		Content $content, ContentParseParams $cpoParams, ParserOutput &$parserOutput
 	) {
 		// Client-side implemenation
-		$parserOutput->setRawText( '' );
+		$parserOutput->setContentHolderText( '' );
 	}
 
 	/**
