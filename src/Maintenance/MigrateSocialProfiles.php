@@ -2,6 +2,7 @@
 
 namespace MediaWiki\Extension\UserProfile\Maintenance;
 
+use MediaWiki\Content\TextContent;
 use MediaWiki\Extension\UserProfile\ProfileManager;
 use MediaWiki\Maintenance\LoggedUpdateMaintenance;
 use MediaWiki\Revision\SlotRecord;
@@ -102,10 +103,10 @@ class MigrateSocialProfiles extends LoggedUpdateMaintenance {
 				continue;
 			}
 			$content = $revision->getContent( SlotRecord::MAIN );
-			if ( !$content ) {
+			if ( !$content instanceof TextContent ) {
 				continue;
 			}
-			$text = $content->getNativeData();
+			$text = $content->getText();
 			$json = json_decode( $text, true );
 			if ( !$json ) {
 				continue;
