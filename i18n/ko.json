@@ -43,5 +43,15 @@
 	"userprofile-field-phone": "전화번호",
 	"userprofile-ve-attr-framed-label": "프레임",
 	"userprofile-ve-attr-orientation-label": "방향",
-	"userprofile-ve-attr-orientation-horizontal": "수평"
+	"userprofile-ve-attr-orientation-horizontal": "수평",
+	"userprofile-general-error": "오류가 발생했습니다. 관리자에게 문의해 주세요.",
+	"userprofile-field-joined": "가입일",
+	"userprofile-error-invalid-page": "이 문서에서는 요청하신 작업을 실행할 수 없습니다",
+	"userprofile-editprofiledata-title": "$1 프로필 데이터 편집",
+	"userprofile-editor-aria-label": "$1 사용자의 프로필 에디터",
+	"userprofile-droplet-name-description": "사용자의 프로필 정보를 표시",
+	"userprofile-set-userimage-failed": "이 이미지는 프로필 사진으로 사용될 수 없습니다",
+	"userprofile-userimage-choose-title": "위키에 있는 이미지 중에서 이미지를 선택하세요",
+	"userprofile-ve-attr-fields": "표시된 프로필 정보",
+	"userprofile-ve-attr-fields-label-help": "표시할 정보입니다. 모든 정보를 표시하려면 비워 두세요."
 }
