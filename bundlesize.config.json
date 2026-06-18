@@ -5,7 +5,9 @@
 	},
 	{
 		"resourceModule": "ext.userProfile.profileImage.bootstrap",
-		"maxSize": "2 kB"
+		"maxSize": "2 kB",
+		"@note": "Ignore oojs-ui*",
+		"ignoreDependencies": true
 	},
 	{
 		"resourceModule": "ext.userProfile.bootstrap",
