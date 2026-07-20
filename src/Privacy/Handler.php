@@ -43,7 +43,9 @@ class Handler implements IPrivacyHandler {
 		$this->user = $this->userFactory->newFromName( $newUsername );
 		try {
 			$this->profileManager->setProfileData(
-				[], $this->user, User::newSystemUser( 'MediaWiki default', [ 'steal' => true ] )
+				[],
+				$this->user,
+				User::newSystemUser( User::MAINTENANCE_SCRIPT_USER, [ 'steal' => true ] )
 			);
 		} catch ( \Throwable $ex ) {
 			return Status::newFatal( $ex->getMessage() );
@@ -70,12 +72,13 @@ class Handler implements IPrivacyHandler {
 	 */
 	public function exportData( array $types, $format, User $user ) {
 		$fields = $this->profileManager->getFieldRegistry()->getSerializedFields(
-			$user, User::newSystemUser( 'MediaWiki default', [ 'steal' => true ] ),
+			$user,
+			User::newSystemUser( User::MAINTENANCE_SCRIPT_USER, [ 'steal' => true ] ),
 			RequestContext::getMain()->getLanguage()
 		);
 		$data = $this->profileManager->getProfileData(
 			$user,
-			User::newSystemUser( 'MediaWiki default', [ 'steal' => true ] )
+			User::newSystemUser( User::MAINTENANCE_SCRIPT_USER, [ 'steal' => true ] )
 		);
 		$finalData = [];
 		foreach ( $fields as $key => $value ) {
