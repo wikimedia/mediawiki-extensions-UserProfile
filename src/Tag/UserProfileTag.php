@@ -3,7 +3,7 @@
 namespace MediaWiki\Extension\UserProfile\Tag;
 
 use MediaWiki\Extension\UserProfile\ProfileFieldRegistry;
-use MediaWiki\Language\Language;
+use MediaWiki\Languages\LanguageFactory;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
 use MediaWiki\User\UserFactory;
@@ -21,10 +21,12 @@ class UserProfileTag extends GenericTag {
 	/**
 	 * @param UserFactory $userFactory
 	 * @param ProfileFieldRegistry $profileFieldRegistry
+	 * @param LanguageFactory $languageFactory
 	 */
 	public function __construct(
 		private readonly UserFactory $userFactory,
-		private readonly ProfileFieldRegistry $profileFieldRegistry
+		private readonly ProfileFieldRegistry $profileFieldRegistry,
+		private readonly LanguageFactory $languageFactory
 	) {
 	}
 
@@ -141,8 +143,9 @@ class UserProfileTag extends GenericTag {
 	 */
 	private function getAvailableFieldsForTag(): array {
 		$user = $this->userFactory->newAnonymous();
+		$language = $this->languageFactory->getLanguage( 'en' );
 		$allFields = $this->profileFieldRegistry->getSerializedFields(
-			$user, $user, new Language()
+			$user, $user, $language
 		);
 		$mandatory = [ 'username', 'realName', 'userDisplay', 'imageUrl' ];
 
