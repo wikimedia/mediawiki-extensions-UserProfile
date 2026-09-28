@@ -23,7 +23,7 @@
 		"mwstake/mediawiki-component-dynamicfiledispatcher": "~2",
 		"mwstake/mediawiki-component-formengine": "^3.1",
 		"mwstake/mediawiki-component-generictaghandler": "^2.0.0",
-		"mwstake/mediawiki-component-inputprocessor": "~1"
+		"mwstake/mediawiki-component-inputprocessor": "~2"
 	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "52.0.0",
