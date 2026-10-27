@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\UserProfile\Action;
 
-use EditAction;
 use Exception;
+use MediaWiki\Actions\EditAction;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Extension\UserProfile\ProfileManager;
 use MediaWiki\Html\Html;
