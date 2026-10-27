@@ -2,13 +2,13 @@
 
 namespace MediaWiki\Extension\UserProfile\Action;
 
-use Article;
 use EditAction;
 use Exception;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Extension\UserProfile\ProfileManager;
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Page\Article;
 use PermissionsError;
 
 class EditProfileData extends EditAction {
