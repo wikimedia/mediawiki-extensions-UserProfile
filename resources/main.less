@@ -1,5 +1,7 @@
+@import 'mediawiki.skin.variables.less';
+
 .user-profile-panel {
-	background-color: white;
+	background-color: @background-color-base;
 
 	&.user-profile-loading {
 		width: 100%;
@@ -51,14 +53,14 @@
 
 		.user-profile-name-header {
 			.user-profile-name {
-				font-size: 1.5em;
+				font-size: @font-size-large;
 				line-height: 1;
 				margin-bottom: 10px;
 			}
 
 			.user-profile-username {
 				margin-left: 10px;
-				color: #4b4b4b;
+				color: @color-subtle;
 			}
 		}
 
@@ -67,14 +69,14 @@
 
 			.user-profile-meta {
 				display: inline-block;
-				color: #4b4b4b;
-				font-size: 0.9em;
+				color: @color-subtle;
+				font-size: @font-size-small;
 
 				&:not( :last-child )::after {
 					content: '•';
 					margin-left: 10px;
 					margin-right: 10px;
-					color: #4b4b4b;
+					color: @color-subtle;
 				}
 			}
 		}
