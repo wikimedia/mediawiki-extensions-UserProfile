@@ -6,6 +6,7 @@ use Exception;
 use MediaWiki\CommentStore\CommentStoreComment;
 use MediaWiki\Content\JsonContent;
 use MediaWiki\Content\WikitextContent;
+use MediaWiki\Exception\PermissionsError;
 use MediaWiki\Extension\UserProfile\Content\Profile;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Message\Message;
@@ -19,7 +20,6 @@ use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserIdentity;
-use PermissionsError;
 use Psr\Log\LoggerInterface;
 use Throwable;
 
