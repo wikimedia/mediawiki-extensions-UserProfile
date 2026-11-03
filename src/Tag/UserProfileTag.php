@@ -94,10 +94,11 @@ class UserProfileTag extends GenericTag {
 		$formSpec = new StandaloneFormSpecification();
 		$formSpec->setItems( [
 			[
-				'type' => 'user',
+				'type' => 'user_picker',
 				'name' => 'user',
 				'label' => Message::newFromKey( 'userprofile-ve-attr-user-label' )->text(),
 				'help' => Message::newFromKey( 'userprofile-ve-attr-user-help' )->text(),
+				'widget_$overlay' => true,
 			],
 			[
 				'type' => 'checkbox',
